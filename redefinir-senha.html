@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaSpace | Redefinir senha</title>
+    <link rel="stylesheet" href="redefinir-senha.css">
+</head>
+<body>
+
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <main class="redefinir-container">
+
+        <div class="logo">
+            <span class="logo-icon">N</span>
+            <span>Nova<span>Space</span></span>
+        </div>
+
+        <div class="cabecalho">
+            <span class="subtitulo">SEGURANÇA DA CONTA</span>
+            <h1>Nova <span>senha.</span></h1>
+            <p>Crie uma nova senha para voltar a acessar sua conta.</p>
+        </div>
+
+        <form id="redefinirForm">
+
+            <label for="senha">Nova senha</label>
+            <input
+                type="password"
+                id="senha"
+                placeholder="Digite sua nova senha"
+                minlength="6"
+                required
+            >
+
+            <label for="confirmarSenha">Confirmar nova senha</label>
+            <input
+                type="password"
+                id="confirmarSenha"
+                placeholder="Digite novamente sua senha"
+                minlength="6"
+                required
+            >
+
+            <button type="submit" id="btnRedefinir">
+                Salvar nova senha →
+            </button>
+
+        </form>
+
+        <p id="mensagem"></p>
+
+        <div class="voltar">
+            Lembrou sua senha?
+            <a href="index.html">Voltar ao login</a>
+        </div>
+
+        <footer>
+            © 2026 NovaSpace. Todos os direitos reservados.
+        </footer>
+
+    </main>
+
+    <script type="module" src="redefinir-senha.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaSpace | Recuperar senha</title>
+    <link rel="stylesheet" href="recuperar-senha.css">
+</head>
+<body>
+
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <main class="recuperar-container">
+
+        <div class="logo">
+            <span class="logo-icon">N</span>
+            <span>Nova<span>Space</span></span>
+        </div>
+
+        <div class="cabecalho">
+            <span class="subtitulo">RECUPERAÇÃO DE ACESSO</span>
+            <h1>Esqueceu sua <span>senha?</span></h1>
+            <p>Informe seu e-mail e enviaremos um link para redefinir sua senha.</p>
+        </div>
+
+        <form id="recuperarForm">
+
+            <label for="email">E-mail cadastrado</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="seuemail@gmail.com"
+                required
+            >
+
+            <button type="submit" id="btnRecuperar">
+                Enviar link de recuperação →
+            </button>
+
+        </form>
+
+        <p id="mensagem"></p>
+
+        <div class="voltar">
+            Lembrou sua senha?
+            <a href="index.html">Voltar ao login</a>
+        </div>
+
+        <footer>
+            © 2026 NovaSpace. Todos os direitos reservados.
+        </footer>
+
+    </main>
+
+    <script type="module" src="recuperar-senha.js"></script>
+
+</body>
+</html>

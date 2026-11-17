@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaSpace | Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- API oficial de login do Google -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+
+    <main class="login-container">
+
+        <div class="logo">
+            <div class="logo-icon">N</div>
+            <span>Nova<span class="purple">Space</span></span>
+        </div>
+
+        <div class="welcome">
+            <span class="tag">SEJA BEM-VINDO</span>
+            <h1>Entre na sua<br><span>conta.</span></h1>
+            <p>Acesse sua conta para continuar sua experiência.</p>
+        </div>
+
+        <form id="loginForm">
+
+            <label for="email">E-mail</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="seuemail@gmail.com"
+                required
+            >
+
+            <label for="password">Senha</label>
+
+            <div class="password-container">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+                <button type="button" id="togglePassword">
+                    Mostrar
+                </button>
+            </div>
+
+            <div class="options">
+                <label class="remember">
+                    <input type="checkbox" id="remember">
+                    Lembrar de mim
+                </label>
+
+                <a href="#" id="forgotPassword">Esqueceu a senha?</a>
+            </div>
+
+            <button type="submit" class="login-button">
+                Entrar na conta
+                <span>→</span>
+            </button>
+
+        </form>
+
+        <div class="separator">
+            <span></span>
+            <p>OU CONTINUE COM</p>
+            <span></span>
+        </div>
+
+        <div id="googleButton"></div>
+
+        <div class="register">
+            Não tem uma conta?
+            <a href="#" id="registerLink">Criar conta</a>
+        </div>
+
+        <p id="message">Erro ao entrar: Credenciais Inválidas.</p>
+
+        <footer>
+            © 2026 NovaSpace. Todos os direitos reservados.
+        </footer>
+
+    </main>
+
+</body>
+</html>

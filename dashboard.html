@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaSpace | Painel</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="logo">
+            <span class="logo-icon">N</span>
+            <span>Nova<span>Space</span></span>
+        </div>
+
+        <button id="btnSair">Sair da conta ↗</button>
+    </header>
+
+    <main class="dashboard">
+
+        <section class="boas-vindas">
+            <span class="subtitulo">SEU ESPAÇO DIGITAL</span>
+            <h1>Olá, <span id="nomeUsuario">usuário</span>!</h1>
+            <p>Seja bem-vindo ao seu espaço no NovaSpace.</p>
+        </section>
+
+        <section class="cartao-principal">
+            <div>
+                <span class="subtitulo">NOVA EXPERIÊNCIA</span>
+                <h2>Bem-vindo ao NovaSpace.</h2>
+                <p>
+                    Seu espaço está pronto. Aqui você poderá acompanhar
+                    suas atividades e acessar suas ferramentas.
+                </p>
+            </div>
+
+            <div class="icone-principal">N</div>
+        </section>
+
+        <section class="informacoes">
+            <h2>Minha conta</h2>
+
+            <div class="cartao-info">
+                <span>Nome</span>
+                <strong id="nomeCompleto">Carregando...</strong>
+            </div>
+
+            <div class="cartao-info">
+                <span>E-mail</span>
+                <strong id="emailUsuario">Carregando...</strong>
+            </div>
+
+            <div class="cartao-info">
+                <span>Status</span>
+                <strong class="status">Conta autenticada</strong>
+            </div>
+        </section>
+
+        <footer>
+            © 2026 NovaSpace. Todos os direitos reservados.
+        </footer>
+
+    </main>
+
+    <script type="module" src="dashboard.js"></script>
+
+</body>
+</html>
